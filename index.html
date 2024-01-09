@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .row{
+            width: 400px;
+        }
+        .width{
+            width: 150px;
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 style="margin-left: 5%;">Novell Services Login</h2>
+    <form action="">
+        <div class="row">
+            <label for="name" class="width">Username:</label>
+            <input type="text" id="name" >
+        </div><br>
+    
+        <div class="row">
+            <label for="psw" class="width">Password:</label>
+            <input type="password" id="psw" >
+        </div><br>
+        
+        <div class="row">
+            <label for="emp" class="width">City of Employment:</label>
+            <input type="" id="emp">
+        </div><br>
+
+        <div class="row">
+            <label for="webServer" class="width">Web server:</label>
+            <select id="webServer">
+                <option value="">-Choose a server-</option>
+                <option value="server 1">server 1</option>
+                <option value="server 2">server 2</option>
+                <option value="server 3">server 3</option>
+            </select>
+        </div><br>
+
+        <div class="row">
+            <label for="role" class="width">Please specify your role:</label>
+            <input type="radio" id="admin" name="role" value="admin">
+            <label for="admin">Admin</label><br>
+            <input type="radio" id="engg" name="role" value="engg" style="margin-left: 158px;">
+            <label for="engg">Engineer</label>
+            <input type="radio" id="man" name="role" value="man"  style="margin-left: 158px;">
+            <label for="man">Manager</label>
+            <input type="radio" id="guest" name="role" value="guest"  style="margin-left: 158px;">
+            <label for="guest">Guest</label>
+        </div>
+
+        <div class="row">
+            <label for="sign" class="width">Single sign-on to the following:</label>
+            <input type="checkbox"> Mall<br>
+            <input type="checkbox" style="margin-left: 158px;"> Payroll<br>
+            <input type="checkbox" style="margin-left: 158px;"> Self-service<br>
+        </div><br>
+
+        <div  style="margin-left: 10%;">
+            <input type="button" value="Login">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
